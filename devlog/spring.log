@@ -1,0 +1,136 @@
+2023-01-11T09:14:21.325+01:00  INFO 23856 --- [main] c.s.s.SpringBootApiApplication           : Starting SpringBootApiApplication using Java 17.0.4.1 with PID 23856 (C:\Users\tf\udemy\spring_boot_chinese\spring-boot-api\target\classes started by tf in C:\Users\tf\udemy\spring_boot_chinese\spring-boot-api)
+2023-01-11T09:14:21.329+01:00 DEBUG 23856 --- [main] c.s.s.SpringBootApiApplication           : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-01-11T09:14:21.329+01:00  INFO 23856 --- [main] c.s.s.SpringBootApiApplication           : The following 1 profile is active: "dev"
+2023-01-11T09:14:21.992+01:00  INFO 23856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-11T09:14:22.040+01:00  INFO 23856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2023-01-11T09:14:22.547+01:00  INFO 23856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-11T09:14:22.557+01:00  INFO 23856 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-11T09:14:22.558+01:00  INFO 23856 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-11T09:14:22.635+01:00  INFO 23856 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-11T09:14:22.636+01:00  INFO 23856 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1270 ms
+2023-01-11T09:14:22.769+01:00  INFO 23856 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-11T09:14:22.823+01:00  INFO 23856 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-01-11T09:14:22.980+01:00  WARN 23856 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-11T09:14:23.083+01:00  INFO 23856 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-11T09:14:23.453+01:00  INFO 23856 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4df0d9f8
+2023-01-11T09:14:23.455+01:00  INFO 23856 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-11T09:14:23.531+01:00  INFO 23856 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-01-11T09:14:24.221+01:00  INFO 23856 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-11T09:14:24.229+01:00  INFO 23856 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-11T09:14:24.478+01:00  WARN 23856 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-11T09:14:24.769+01:00  INFO 23856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-11T09:14:24.776+01:00  INFO 23856 --- [main] c.s.s.SpringBootApiApplication           : Started SpringBootApiApplication in 3.985 seconds (process running for 4.935)
+2023-01-11T09:14:29.064+01:00  INFO 23856 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-11T09:14:29.065+01:00  INFO 23856 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-11T09:14:29.066+01:00  INFO 23856 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-11T09:14:29.094+01:00  INFO 23856 --- [http-nio-8080-exec-1] com.stf.springbootapi.aspect.LogAspect   : ---------------- Before ----------------
+2023-01-11T09:14:29.094+01:00  INFO 23856 --- [http-nio-8080-exec-1] com.stf.springbootapi.api.LogTestApi     : info --- log
+2023-01-11T09:14:29.094+01:00  WARN 23856 --- [http-nio-8080-exec-1] com.stf.springbootapi.api.LogTestApi     : warn --- log
+2023-01-11T09:14:29.094+01:00 ERROR 23856 --- [http-nio-8080-exec-1] com.stf.springbootapi.api.LogTestApi     : error --- log
+2023-01-11T09:14:29.095+01:00 DEBUG 23856 --- [http-nio-8080-exec-1] com.stf.springbootapi.api.LogTestApi     : debug --- log
+2023-01-11T09:14:29.095+01:00  INFO 23856 --- [http-nio-8080-exec-1] com.stf.springbootapi.api.LogTestApi     : name: shan, email: hello@gmail.com
+2023-01-11T09:14:29.095+01:00  INFO 23856 --- [http-nio-8080-exec-1] com.stf.springbootapi.aspect.LogAspect   : ---------------- After ----------------
+2023-01-11T09:14:34.968+01:00  INFO 23856 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-11T09:14:34.969+01:00  INFO 23856 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-11T09:14:34.975+01:00  INFO 23856 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-11T09:19:05.418+01:00  INFO 20744 --- [main] c.s.s.SpringBootApiApplication           : Starting SpringBootApiApplication using Java 17.0.4.1 with PID 20744 (C:\Users\tf\udemy\spring_boot_chinese\spring-boot-api\target\classes started by tf in C:\Users\tf\udemy\spring_boot_chinese\spring-boot-api)
+2023-01-11T09:19:05.420+01:00 DEBUG 20744 --- [main] c.s.s.SpringBootApiApplication           : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-01-11T09:19:05.420+01:00  INFO 20744 --- [main] c.s.s.SpringBootApiApplication           : The following 1 profile is active: "dev"
+2023-01-11T09:19:06.072+01:00  INFO 20744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-11T09:19:06.144+01:00  INFO 20744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interfaces.
+2023-01-11T09:19:06.613+01:00  INFO 20744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-11T09:19:06.622+01:00  INFO 20744 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-11T09:19:06.622+01:00  INFO 20744 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-11T09:19:06.697+01:00  INFO 20744 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-11T09:19:06.698+01:00  INFO 20744 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1240 ms
+2023-01-11T09:19:06.818+01:00  INFO 20744 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-11T09:19:06.858+01:00  INFO 20744 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-01-11T09:19:06.991+01:00  WARN 20744 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-11T09:19:07.084+01:00  INFO 20744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-11T09:19:07.331+01:00  INFO 20744 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5fe5c68b
+2023-01-11T09:19:07.333+01:00  INFO 20744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-11T09:19:07.381+01:00  INFO 20744 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-01-11T09:19:07.980+01:00  INFO 20744 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-11T09:19:07.988+01:00  INFO 20744 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-11T09:19:08.245+01:00  WARN 20744 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-11T09:19:08.527+01:00  INFO 20744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-11T09:19:08.534+01:00  INFO 20744 --- [main] c.s.s.SpringBootApiApplication           : Started SpringBootApiApplication in 3.582 seconds (process running for 4.01)
+2023-01-11T09:19:10.394+01:00  INFO 20744 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-11T09:19:10.395+01:00  INFO 20744 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-11T09:19:10.396+01:00  INFO 20744 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-11T09:19:10.419+01:00  INFO 20744 --- [http-nio-8080-exec-1] com.stf.springbootapi.aspect.LogAspect   : ---------------- Before ----------------
+2023-01-11T09:19:10.419+01:00  INFO 20744 --- [http-nio-8080-exec-1] com.stf.springbootapi.api.LogTestApi     : info --- log
+2023-01-11T09:19:10.419+01:00  WARN 20744 --- [http-nio-8080-exec-1] com.stf.springbootapi.api.LogTestApi     : warn --- log
+2023-01-11T09:19:10.419+01:00 ERROR 20744 --- [http-nio-8080-exec-1] com.stf.springbootapi.api.LogTestApi     : error --- log
+2023-01-11T09:19:10.420+01:00 DEBUG 20744 --- [http-nio-8080-exec-1] com.stf.springbootapi.api.LogTestApi     : debug --- log
+2023-01-11T09:19:10.420+01:00  INFO 20744 --- [http-nio-8080-exec-1] com.stf.springbootapi.api.LogTestApi     : name: shan, email: hello@gmail.com
+2023-01-11T09:19:10.420+01:00  INFO 20744 --- [http-nio-8080-exec-1] com.stf.springbootapi.aspect.LogAspect   : ---------------- AfterReturning ---------------- 内容：logTest
+2023-01-11T09:19:10.420+01:00  INFO 20744 --- [http-nio-8080-exec-1] com.stf.springbootapi.aspect.LogAspect   : ---------------- After ----------------
+2023-01-11T09:19:17.301+01:00  INFO 20744 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-11T09:19:17.303+01:00  INFO 20744 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-11T09:19:17.308+01:00  INFO 20744 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-11T09:44:32.296+01:00  INFO 21176 --- [main] c.s.s.SpringBootApiApplication           : Starting SpringBootApiApplication using Java 17.0.4.1 with PID 21176 (C:\Users\tf\udemy\spring_boot_chinese\spring-boot-api\target\classes started by tf in C:\Users\tf\udemy\spring_boot_chinese\spring-boot-api)
+2023-01-11T09:44:32.297+01:00 DEBUG 21176 --- [main] c.s.s.SpringBootApiApplication           : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-01-11T09:44:32.298+01:00  INFO 21176 --- [main] c.s.s.SpringBootApiApplication           : The following 1 profile is active: "dev"
+2023-01-11T09:44:32.800+01:00  INFO 21176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-11T09:44:32.847+01:00  INFO 21176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2023-01-11T09:44:33.377+01:00  INFO 21176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-11T09:44:33.386+01:00  INFO 21176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-11T09:44:33.386+01:00  INFO 21176 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-11T09:44:33.471+01:00  INFO 21176 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-11T09:44:33.472+01:00  INFO 21176 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1137 ms
+2023-01-11T09:44:33.633+01:00  INFO 21176 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-11T09:44:33.678+01:00  INFO 21176 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-01-11T09:44:33.835+01:00  WARN 21176 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-11T09:44:33.933+01:00  INFO 21176 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-11T09:44:34.277+01:00  INFO 21176 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@596afb2f
+2023-01-11T09:44:34.281+01:00  INFO 21176 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-11T09:44:34.362+01:00  INFO 21176 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-01-11T09:44:35.048+01:00  INFO 21176 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-11T09:44:35.056+01:00  INFO 21176 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-11T09:44:35.371+01:00  WARN 21176 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-11T09:44:35.820+01:00  INFO 21176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-11T09:44:35.826+01:00  INFO 21176 --- [main] c.s.s.SpringBootApiApplication           : Started SpringBootApiApplication in 3.981 seconds (process running for 4.413)
+2023-01-11T09:44:45.934+01:00  INFO 21176 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-11T09:44:45.935+01:00  INFO 21176 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-11T09:44:45.935+01:00  INFO 21176 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-01-11T09:44:45.973+01:00  INFO 21176 --- [http-nio-8080-exec-1] com.stf.springbootapi.aspect.LogAspect   : Request -------- RequestLog{url='http://localhost:8080/api/v1/books/1', ip='0:0:0:0:0:0:0:1', classMethod='com.stf.springbootapi.api.BookApi.findBookById', args=[1]}
+2023-01-11T09:44:46.024+01:00  INFO 21176 --- [http-nio-8080-exec-1] com.stf.springbootapi.aspect.LogAspect   : Return ---------------- <200 OK OK,Book{id=1, author='道格拉斯', description='一本不错的营销书,推荐你阅读', name='自我-群体-社会', status=1},[]>
+2023-01-11T09:44:46.026+01:00  INFO 21176 --- [http-nio-8080-exec-1] com.stf.springbootapi.aspect.LogAspect   : ---------------- After ----------------
+2023-01-11T09:45:02.927+01:00  INFO 21176 --- [http-nio-8080-exec-2] com.stf.springbootapi.aspect.LogAspect   : Request -------- RequestLog{url='http://localhost:8080/api/v1/books', ip='0:0:0:0:0:0:0:1', classMethod='com.stf.springbootapi.api.BookApi.findAllBooks', args=[]}
+2023-01-11T09:45:02.994+01:00  INFO 21176 --- [http-nio-8080-exec-2] com.stf.springbootapi.aspect.LogAspect   : Return ---------------- <200 OK OK,[Book{id=1, author='道格拉斯', description='一本不错的营销书,推荐你阅读', name='自我-群体-社会', status=1}, Book{id=2, author='迈克尔-所罗门', description='一本关于营销的书', name='消费者行为', status=0}, Book{id=3, author='[美]克莱顿-克里斯', description='在这本书中，作者向我们战术了多个成功运用新技术，取得竞争优势的公司', name='创新者的窘境', status=0}, Book{id=4, author='简-麦格尼格尔', description='游戏是我们集中精力的大好机会，我们乐观向上的做着意见自己擅长并享受的事', name='游戏改变世界', status=0}, Book{id=5, author='彼得-蒂尔/布莱克', description='帮助你思考从0到1的秘密，在意向不到之处发现价值与机会', name='从0到1', status=0}, Book{id=6, author='[美]德内拉-梅多斯', description='是一本简明扼要的系统思考入门指南，也是人事复杂动态系统的有力工具', name='系统之美', status=1}, Book{id=7, author='彼得-迈尔斯', description='通过演讲一举赢得支持实现梦想', name='高校演讲', status=0}, Book{id=8, author='凯文-凯莉', description='经济和社会发展的趋势有着深刻的见解', name='必然', status=2}, Book{id=9, author='凯文-凯莉', description='这可能是90年代最重要的一本书', name='失控', status=1}, Book{id=10, author='李笑来', description='时间管理不了，智能管理自己', name='把时间当作朋友', status=2}, Book{id=11, author='李笑来', description='七年就是一辈子', name='七年就是一辈子', status=1}, Book{id=12, author='王东岳', description='一本这里随笔，汇集了作者数十年的思想精髓。哲学', name='知鱼之乐', status=0}, Book{id=13, author='王东岳', description='一本哲学书', name='物演通论', status=0}, Book{id=14, author='查理-芒格', description='收录了查理-芒格的个人传记与他投资哲学', name='穷查理宝典', status=1}, Book{id=15, author='Andy Hunt', description='思考如何解决问题', name='程序员思维修炼', status=2}, Book{id=16, author='Andy Hunt', description='学有所思，似有所悟，悟有所行', name='高效程序员的45个', status=1}, Book{id=17, author='格雷厄姆', description='主要介绍黑客即优秀程序员的爱好和动机', name='黑客与画家', status=0}, Book{id=18, author='安德斯-埃里克森', description='如何学习一项技能的方法', name='刻意练习', status=2}, Book{id=20, author='刘慈欣', description='这是一本科幻小说，很不错', name='三体', status=2}, Book{id=152, author='李笑来', description='这是一本不错的书', name='和时间做朋友', status=0}, Book{id=202, author='张三', description='我随便写的一本书', name='私生活', status=0}, Book{id=252, author='刘慈欣', description='一本科幻小说', name='死神永生', status=0}, Book{id=302, author='是我', description='是我写的小说', name='你们仨', status=0}, Book{id=402, author='我', description='好书', name='这是一本书', status=0}, Book{id=452, author='单天帆', description='好看！', name='太好了！', status=0}],[]>
+2023-01-11T09:45:02.995+01:00  INFO 21176 --- [http-nio-8080-exec-2] com.stf.springbootapi.aspect.LogAspect   : ---------------- After ----------------
+2023-01-11T09:45:22.578+01:00  INFO 21176 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-11T09:45:22.580+01:00  INFO 21176 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-11T09:45:22.586+01:00  INFO 21176 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-11T09:53:38.228+01:00  INFO 16156 --- [main] c.s.s.SpringBootApiApplication           : Starting SpringBootApiApplication using Java 17.0.4.1 with PID 16156 (C:\Users\tf\udemy\spring_boot_chinese\spring-boot-api\target\classes started by tf in C:\Users\tf\udemy\spring_boot_chinese\spring-boot-api)
+2023-01-11T09:53:38.229+01:00 DEBUG 16156 --- [main] c.s.s.SpringBootApiApplication           : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-01-11T09:53:38.230+01:00  INFO 16156 --- [main] c.s.s.SpringBootApiApplication           : The following 1 profile is active: "dev"
+2023-01-11T09:53:38.723+01:00  INFO 16156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-11T09:53:38.765+01:00  INFO 16156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2023-01-11T09:53:39.274+01:00  INFO 16156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-11T09:53:39.282+01:00  INFO 16156 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-11T09:53:39.283+01:00  INFO 16156 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-11T09:53:39.356+01:00  INFO 16156 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-11T09:53:39.357+01:00  INFO 16156 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1090 ms
+2023-01-11T09:53:39.506+01:00  INFO 16156 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-11T09:53:39.549+01:00  INFO 16156 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-01-11T09:53:39.682+01:00  WARN 16156 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-11T09:53:39.773+01:00  INFO 16156 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-11T09:53:40.003+01:00  INFO 16156 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@596afb2f
+2023-01-11T09:53:40.005+01:00  INFO 16156 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-11T09:53:40.055+01:00  INFO 16156 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-01-11T09:53:40.674+01:00  INFO 16156 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-11T09:53:40.682+01:00  INFO 16156 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-11T09:53:41.003+01:00  WARN 16156 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-11T09:53:41.466+01:00  INFO 16156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-11T09:53:41.473+01:00  INFO 16156 --- [main] c.s.s.SpringBootApiApplication           : Started SpringBootApiApplication in 3.714 seconds (process running for 4.169)
+2023-01-11T09:53:42.945+01:00  INFO 16156 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-11T09:53:42.946+01:00  INFO 16156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-11T09:53:42.947+01:00  INFO 16156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-01-11T09:53:42.978+01:00  INFO 16156 --- [http-nio-8080-exec-1] com.stf.springbootapi.aspect.LogAspect   : Request -------- RequestLog{url='http://localhost:8080/api/v1/books/0', ip='0:0:0:0:0:0:0:1', classMethod='com.stf.springbootapi.api.BookApi.findBookById', args=[0]}
+2023-01-11T09:53:43.017+01:00  INFO 16156 --- [http-nio-8080-exec-1] com.stf.springbootapi.aspect.LogAspect   : ---------------- After ----------------
+2023-01-11T09:53:43.019+01:00 ERROR 16156 --- [http-nio-8080-exec-1] c.s.s.handler.ApiExceptionHandler        : Error ------- No value present
+2023-01-11T09:53:56.322+01:00  INFO 16156 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-11T09:53:56.323+01:00  INFO 16156 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-11T09:53:56.329+01:00  INFO 16156 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

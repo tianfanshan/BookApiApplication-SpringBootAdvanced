@@ -1,0 +1,6 @@
+logging:
+  level:
+    root: error
+    com.stf: warn
+  file:
+    path: prodLog/my.log

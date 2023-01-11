@@ -1,0 +1,9 @@
+logging:
+  level:
+    root: info
+    com.stf: debug
+  file:
+    path: devlog
+#  config: classpath:logback-test.xml
+#  pattern:
+#    console: '%d{HH:mm:ss.SSS}'

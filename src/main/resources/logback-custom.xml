@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+
+    <!--可以用来区分不同应用程序的日志记录-->
+    <contextName>logback</contextName>
+
+    <!--设置日志文件保存目录和名字-->
+    <property name="log.path" value="devlog"/>
+
+    <!--输出到控制台设置-->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+
+        <!--过滤掉ERROR级别一下的日志-->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+
+        <!--控制台输出日志格式设置-->
+        <!--
+            %d{HH: mm:ss.SSS}日志输出时间
+            %thread 进程名字
+            %-5level 日志级别，并且使用5个字符靠左对齐
+            %logger{36} 日志输出者的名字(类名)
+            %msg%n 日志输出的信息
+            %n 换行符
+        -->
+        <encoder>
+            <pattern>%d{HH: mm:ss.SSS} %contextName [%thread] %-5level %logger{36} - %msg%n %n</pattern>
+        </encoder>
+    </appender>
+
+    <!--输出到文件 设置-->
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${log.path}</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--定义日志切分方式，把每一天的日志归档一个文件中-->
+            <fileNamePattern>devlog</fileNamePattern>
+            <!--保留历史日志一年的时间-->
+            <maxHistory>365</maxHistory>
+            <!--指定日志文件的上限大小，设置为200MB的话，那么到了这个值，就会删除旧的日志-->
+            <totalSizeCap>200MB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{HH: mm:ss.SSS} %contextName [%thread] %-5level %logger{36} - %msg%n %n</pattern>
+        </encoder>
+    </appender>
+
+    <!--指定基础的日志输出级别-->
+    <root lever="debug">
+        <appender-ref ref="console"/>
+        <appender-ref ref="file"/>
+    </root>
+    <!--
+        指定com.shan.springbootapi.api.LogTestController类日志级别位WARN和大于WARN的之日信息由名为console的appender处理
+        additivity="false" 不再向上级root传递打印信息
+    -->
+    <logger name="com.shan.springbootapi.api.LogTestApi" level="WARN" additivity="false">
+        <appender-ref ref="console"/>
+    </logger>
+
+    <!--
+        继承自上级日志root设置，上级日志打印一次
+        本身不打印任何日志
+    -->
+    <!--<logger name="com.shan.springbootapi.api.BookApi"/>-->
+
+    <!--多环境配置-->
+
+    <!--测试环境+开发环境. 多个使用逗号隔开-->
+    <springProfile name="test,dev">
+        <logger name="com.shan.springbootapi.api.LogTestApi" level="debug"/>
+    </springProfile>
+
+    <!--生产环境-->
+    <springProfile name="prod">
+        <logger name="com.shan.springbootapi.api.LogTestApi" level="ERROR"/>
+    </springProfile>
+</configuration>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
